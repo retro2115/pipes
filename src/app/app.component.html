@@ -48,6 +48,21 @@
 		</div>
 	</div>	
 
+	<div class="row">
+		<div class="form-group col">
+			<label for="">Miles
+				<input class="form-control" (input)="onMilesChange($any($event.target).value)">
+			</label>
+		</div>
+
+		<div class="col">
+			<label for=""><b>Payment amount</b></label>
+			<div>
+				{{ miles | convert }}
+			</div>
+		</div>
+	</div>	
+
 
 
 
