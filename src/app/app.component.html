@@ -32,6 +32,23 @@
 		</div>
 	</div>	
 
+	
+	<div class="row">
+		<div class="form-group col">
+			<label for="">Payment amount
+				<input class="form-control" (input)="onAmountChange($any($event.target).value)">
+			</label>
+		</div>
+
+		<div class="col">
+			<label for=""><b>Payment amount</b></label>
+			<div>
+				{{ amount }}
+			</div>
+		</div>
+	</div>	
+
+
 
 
 
